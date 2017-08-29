@@ -1,7 +1,12 @@
 /**
  *
  * All scss here
+
+ include @font-face for josefin Sans 
  */
+
+@import "reset";
+
 @font-face {
   font-family: 'themefisher-font';
   src:  url('fonts/themefisher-font.eot?ug5hnh');
@@ -68,6 +73,7 @@
 	 		float:right;
 	 		position:relative;
 	 		margin-top:151px;
+	 		
 	 	}
 	 	p 	{
 	 		font-weight:lighter;
@@ -92,7 +98,8 @@
 	border:$header-border;
 	width:1041px;
 	margin:0 auto;
-	font:100% $font-stack; 
+	font-family:$font-stack; 
+
 	.copy-two{
 		width:100%;
 		text-align:center;
@@ -100,27 +107,27 @@
 		font-weight:bold;
 	}
 	.copy-three {
-		width:327px;
+		width:320px;
 		border:$header-border;
-		float:left;
+		display:inline-block;
 		.tf-ion-ios-camera-outline:before {
-  		content: "\f3f5";
+  		content:"\f3f5";
+  		font-family:"themefisher-font"; 
 		}
 	}
 	.picture {
 		width:$picture-width;
 		border:$header-border;
-		margin:0 auto;
 		position:relative;
+		display:inline-block;
 	}
 	.copy-four {
-		width:327px;
+		width:320px;
 		border:$header-border;
-		float:right;
 		overflow:auto;
 		position:relative;
 		box-sizing:border-box;
-		margin-top:-445px;
+		display:inline-block;	
 	}
 	h4 {
 		font-size:20px;
