@@ -250,24 +250,21 @@
 	width:991px;
 	font-family:$font-stack;
 	margin:0 auto;
-	border:$header-border;
 
-		.copy-eight {
-			width:496px;
-			margin-top:169px;
-			margin-bottom:119px;
-			text-align:left;
-			border:$header-border; 
-			h5 {
-				font-size:32px;		
-			}
-			p {
-				font-size:18px;
-			}
-			h5, p {
-				margin-bottom:20px;
-				color:#3C3C3C;
-			}
+	.copy-eight {
+		width:496px;
+		margin:60px auto;
+		
+		h5 {
+			font-size:32px;		
+		}
+		p {
+			font-size:18px;
+		}
+		h5, p {
+			margin-bottom:20px;
+			color:#3C3C3C;
+		}
 		button {
 			width:176px;
 			height:38px;
@@ -277,21 +274,74 @@
 	 		font-size:16px;
 	 		font-weight:lighter;
 	 		font-family:$font-stack; 
-			}
-
-		.picture {
-		 width:333px;
-		 border:$header-border;
-		 margin:0 auto;
 		}
+	}
+	.picture{
+		width:333px;
+		margin-right:82px;
+		}
+	.picture,.copy-eight {
+		display:inline-block;
+		overflow:auto;
+	}
+}
 
-		.picture,.copy-eight {
-			display:inline-block;
-			overflow:auto;
-			}
+.container-six {
+	width:1149px;
+	font-family:$font-stack;
+	margin:0 auto; 
+	border:3px solid blue;
+	
+	.copy-eleven {
+		margin:25px auto;
+		display:block;
+		text-align:center;
+		font-size:40px;
+		color:#3C3C3C;
+		font-weight:bold;
+	} 
+
+	.picture-one {
+		width:231px;
+		height:266px;	
 	}
 
+	.picture-two {
+		width:240px;
+		height:276px;
+	}
+
+	.picture-three {
+		width:246px;
+		height:283px;
+	}
+
+	.picture-four {
+		width:229px;
+		height:264px;
+	}
+
+	.picture-one, .picture-two, .picture-three, .picture-four {
+		display:inline-block;
+		margin-right:10px;
+		margin-left:10px;
+		position:relative;
+		border:3px solid blue;
+	}
+
+} 
+
+.container-seven { 
+	width:100%;
+	margin-top:115px;
+	background-image:url("../images/BitmapBackground.png");
+	background-repeat:no-repeat;
+  	background-size:cover;
 }
+
+
+
+
 
 
 
