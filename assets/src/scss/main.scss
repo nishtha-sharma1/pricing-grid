@@ -102,7 +102,7 @@
 	 		color:#FFFFFF;
 	 		font-size:18px;
 	 		font-weight:lighter;
-	 		font:100% $font-stack;
+	 		font-family:$font-stack;
 	 		} 
 		}
 }
@@ -138,7 +138,6 @@
   		font-family:"themefisher-font";
   		font-size:30px; 
 		}
-		
 	}
 	.picture {
 		width:$picture-width;
@@ -163,8 +162,139 @@
 		font-weight:normal;
 		margin-bottom:34px;
 	}
-	
 }
+
+
+.container-three {
+	width:100%;
+	background-color:#FDA920;
+	margin-top:92px;
+	font-family:$font-stack;
+	color:#FFFFFF;
+	position:relative;
+	text-align:center;
+	.picture {
+		width:$picture-width;
+		margin:92px 92px 92px 0px;
+	}
+	.copy-five {
+		margin:194px auto;
+		text-align:left;
+		h3 {
+			font-size:40px;
+			font-weight:bold;
+			margin-bottom:34px;
+			width:663px;
+		}
+		p {
+			font-size:18px;
+			font-weight:lighter;
+			width:593.46px;
+		}
+	}
+	.picture,.copy-five {
+		display:inline-block;
+		overflow:auto;
+		position:relative;		
+	}
+}
+
+.container-four {
+	width:991px;
+	font-family:$font-stack;
+	margin:0 auto;
+	.copy-six{
+		display:block;
+		font-size:40px;
+		font-weight:bold;
+		color:#3C3C3C;
+		text-align:center;
+		margin-top:70px;
+	}
+	.picture{
+		width:337px;
+		margin-right:102px;
+	}
+	.copy-seven{
+		width:496px;
+		margin-top:169px;
+		margin-bottom:119px;
+		h5 {
+			font-size:32px;		
+		}
+		p {
+			font-size:18px;
+		}
+		h5, p {
+			margin-bottom:20px;
+			color:#3C3C3C;
+		}
+		button {
+			width:176px;
+			height:38px;
+			border-radius:40px;
+	 		background-color:#FEB648;
+	 		color:#FFFFFF;
+	 		font-size:16px;
+	 		font-weight:lighter;
+	 		font-family:$font-stack; 
+		}
+	}
+	.picture,.copy-seven {
+		display:inline-block;
+		overflow:auto;
+	}
+}
+
+.container-five {
+	width:991px;
+	font-family:$font-stack;
+	margin:0 auto;
+	border:$header-border;
+
+		.copy-eight {
+			width:496px;
+			margin-top:169px;
+			margin-bottom:119px;
+			text-align:left;
+			border:$header-border; 
+			h5 {
+				font-size:32px;		
+			}
+			p {
+				font-size:18px;
+			}
+			h5, p {
+				margin-bottom:20px;
+				color:#3C3C3C;
+			}
+		button {
+			width:176px;
+			height:38px;
+			border-radius:40px;
+	 		background-color:#FEB648;
+	 		color:#FFFFFF;
+	 		font-size:16px;
+	 		font-weight:lighter;
+	 		font-family:$font-stack; 
+			}
+
+		.picture {
+		 width:333px;
+		 border:$header-border;
+		 margin:0 auto;
+		}
+
+		.picture,.copy-eight {
+			display:inline-block;
+			overflow:auto;
+			}
+	}
+
+}
+
+
+
 
 
 
