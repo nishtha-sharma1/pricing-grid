@@ -16,7 +16,6 @@
   font-style: normal;
 }
 
-
 @font-face {
 	font-family: 'JosefinSans';
 	src: url('../../fonts/josefin-sans/Josefin-Sans.eot'); /* IE9 Compat Modes */
@@ -62,6 +61,7 @@
  $div-width:1002px;
  $picture-width:227px;
 
+
  body {
  	font-family: 'JosefinSans';
  }
@@ -90,11 +90,9 @@
 	}
 
 .container-one {
-	
 	width:$width;
 	margin:0 auto;
 	overflow:auto;
-	 
 	 .picture {
 	 	width:$picture-width;
 	 	float:left;
@@ -103,13 +101,11 @@
 	 	margin-top:151px;
 	 }
 	 .copy-one {
-	 	
 	 	width:560px;
 	 	font: 100% $font-stack;
 	 	float:right;
 	 	overflow:auto;
 	 	position:relative;
-	 	
 	 	h2{
 	 		font-size:60px;
 	 		font-weight:bold;
@@ -118,12 +114,11 @@
 	 		margin-top:151px;	
 	 	}
 	 	p {
-		 		font-weight:lighter;
-		 		font-size:20px;
-		 		margin-top:10px;
-		 		position:relative;
+		 	font-weight:lighter;
+		 	font-size:20px;
+		 	margin-top:10px;
+		 	position:relative;
 	 		}
-	 	
 	 	button{
 	 		width:207px;
 	 		height:50px;
@@ -149,19 +144,16 @@
 		font-weight:bold;
 		margin-top:190px;
 	}
-
 	.copy-three,.picture,.copy-four {
 		display:inline-block;
 		margin-right:30px;
 		position:relative;
 	}
-
 	.copy-three, .copy-four {
 		width:320px;
 		overflow:auto;
 		box-sizing:border-box;
 	}
-
 	.copy-three {
 		.tf-ion-ios-camera-outline:before {
   		content:"\f3f5";
@@ -181,12 +173,10 @@
 		}
 		margin-left:30px;
 	}
-	
 	h4 {
 		font-size:20px;
 		font-weight:bold;
 	}
-	
 	p {
 		font-size:18px;
 		font-weight:normal;
@@ -228,7 +218,6 @@
 		position:relative;		
 	}
 }
-
 .container-four {
 	width:991px;
 	font-family:$font-stack;
@@ -275,16 +264,13 @@
 		overflow:auto;
 	}
 }
-
 .container-five {
 	width:991px;
 	font-family:$font-stack;
 	margin:0 auto;
-
 	.copy-eight {
 		width:496px;
 		margin:60px auto;
-		
 		h5 {
 			font-size:32px;		
 		}
@@ -315,13 +301,12 @@
 		overflow:auto;
 	}
 }
-
 .container-six {
 	width:1149px;
 	font-family:$font-stack;
 	margin:0 auto; 
-	border:3px solid blue;
-	
+	overflow:hidden; 
+
 	.copy-eleven {
 		margin:25px auto;
 		display:block;
@@ -329,43 +314,51 @@
 		font-size:40px;
 		color:#3C3C3C;
 		font-weight:bold;
-	} 
-
-	.picture-one {
-		width:231px;
-	}
-
-	.picture-two {
-		width:240px;
-	}
-
-	.picture-three {
-		width:246px;
-	}
-
-	.picture-four {
-		width:229px;
-	}
+		} 
 
 	.picture-one, .picture-two, .picture-three, .picture-four {
-		margin: 5px;
-    	display:inline-block;
-	}
+    	float:left;
+    	width:25%;
+    	img {
+    		width:100%;
+    		display:inline-block;
+    		} 
+		}
 
 	} 
 
 .container-seven { 
-	background-image: url('../../images/BitmapBackground.png');
+	background-image: url('../../images/Darkerbackground.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width:100%;
-	margin-top:115px;
-  	border:1px solid blue; 	
-}
+	height:321px;
+  	margin-top:109px;
+  	margin-bottom:70px;
+  
+
+  		.form{
+  			width:510px;
+  			display:block;
+  			padding-top:70px;
+  			margin:0 auto;  			
+  			h5{
+  				font-family:$font-stack;
+  				font-size:31px;
+  				color:#FFFFFF;
+  				text-align:center;
+  			}
+  			p {
+  				font-family:$font-stack;
+  				font-size:18px;
+  				color:#FFFFFF;
+  				font-weight:300; 
+  			}
+  		}
+	}
 
 .container-eight {
 	width:1123px;
-	border:1px solid blue;
 	font-family:$font-stack;
 	margin:0 auto;
 	
@@ -376,11 +369,48 @@
 	}
 
 	.copy-ten {
-		display:inline-block; 
+		display:inline-block;
+
 		.box-copy-four {
-			border:1px solid blue;
-			margin:0 auto; 
+			text-align:center;
+			display:inline-block;
+			margin-top:73px;
+			margin-bottom:74px;
 			
+			.tf-ion-quote:before {
+  			content:"\f347";
+  			font-family:"themefisher-font";
+  			font-size:40px;
+  			color:#FDA920;
+  			width:30px; 
+			}
+			.description {
+				width:322.36px; 
+				font-family:"Lora";
+				font-size:14px;
+				font-style:italic; 
+				color:#777777;
+				margin:25px auto;
+			}
+			.name{
+				font-size:18px;
+			}
+			.ceo{
+				margin:0 auto;
+			}
+			.title {
+				font-size:14px;
+			}
+			.description, .name, .title {
+				text-align:center;
+			}
+
+		}
+		.box-copy-five {
+			display:inline-block;
+			text-align:center;
+			margin-left:70px;
+
 			.tf-ion-quote:before {
   			content:"\f347";
   			font-family:"themefisher-font";
@@ -389,20 +419,64 @@
   			width:30px;
 			}
 			.description {
-				text-align:center;
 				width:322.36px; 
 				font-family:"Lora";
 				font-size:14px;
 				font-style:italic; 
-				color:#777777; 
+				color:#777777;
+				margin:25px auto; 
 			}
-			
+			.name{
+				font-size:18px;
+			}
+			.ceo{
+				margin:0 auto;
+			}
+			.title {
+				font-size:14px;
+			}
+			.description, .name, .title {
+				text-align:center;
+			}
+		}
+
+		.box-copy-six {
+			display:inline-block;
+			text-align:center;
+			margin-left:70px;
+			.tf-ion-quote:before {
+  			content:"\f347";
+  			font-family:"themefisher-font";
+  			font-size:40px;
+  			color:#FDA920;
+  			width:30px; 
+			}
+			.description {
+				width:322.36px; 
+				font-family:"Lora";
+				font-size:14px;
+				font-style:italic; 
+				color:#777777;
+				margin:25px auto; 
+			}
+			.name{
+				font-size:18px;
+			}
+			.ceo{
+				margin:0 auto;
+			}
+			.title {
+				font-size:14px;
+			}
+			.description, .name, .title {
+				text-align:center;
+			}
 		}
 	}
- 
+
 	.button {
-		display:block; 
-		margin:0 auto; 
+		margin:0 auto;
+		text-align:center; 
 		button {
 			width:176px;
 			height:38px;
