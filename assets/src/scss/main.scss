@@ -64,22 +64,23 @@
 	font-style: italic;
 }
 
-
-
  $width:1002px;
- $header-border:4px solid black;
  $header-height:38px;
  $font-size-small:13px;
  $font-size-medium:25px; 
  $font-stack:Josefin Sans;
  $div-width:1002px;
  $picture-width:227px;
+ $all-white:#FFFFFF;
+ $button-color:#FEB648;
+
+
+
 
 
  body {
- 	font-family: 'JosefinSans';
+ 	font-family:$font-stack;
  }
-
 .container-zero { 
 	width: $width;
 	font-family:$font-stack;
@@ -102,7 +103,6 @@
 			}
 		}
 	}
-
 .container-one {
 	width:$width;
 	margin:0 auto;
@@ -120,7 +120,6 @@
 	 	float:right;
 	 	overflow:auto;
 	 	position:relative;
-	 	
 	 	h2{
 	 		font-size:60px;
 	 		font-weight:bold;
@@ -129,34 +128,32 @@
 	 		margin-top:151px;
 	 		margin-bottom:29px;
 	 	}
+
 	 	p {
 		 	font-weight:lighter;
 		 	font-size:20px;
 		 	margin-top:50px;
 		 	position:relative;
 	 		}
-	 	
-	 	button{
+	 	.buy-now {
 	 		width:207px;
 	 		height:50px;
 	 		border-radius:40px;
-	 		background-color:#FEB648;
-	 		color:#FFFFFF;
+	 		background-color:$button-color;
+	 		color:$all-white;
 	 		font-size:18px;
 	 		font-weight:lighter;
 	 		font-family:$font-stack;
 	 		border:none;
 	 		margin-top:29px; 
-	 		box-shadow:0 0 15px #FEB648;
+	 		box-shadow:0 0 15px $button-color;
 	 		} 
 		}
 }
-
 .container-two {
 	width:1041px;
 	margin:0 auto;
 	font-family:$font-stack;  
-
 	.copy-two{
 		width:100%;
 		text-align:center;
@@ -204,14 +201,12 @@
 		margin-bottom:34px;
 	}
 }
-
-
 .container-three {
 	width:100%;
 	background-color:#FDA920;
 	margin-top:92px;
 	font-family:$font-stack;
-	color:#FFFFFF;
+	color:$all-white;
 	position:relative;
 	text-align:center;
 	.picture {
@@ -239,6 +234,7 @@
 		position:relative;		
 	}
 }
+
 .container-four {
 	width:991px;
 	font-family:$font-stack;
@@ -274,14 +270,13 @@
 			height:38px;
 			border-radius:40px;
 	 		background-color:#FEB648;
-	 		color:#FFFFFF;
+	 		color:$all-white;
 	 		font-size:16px;
 	 		font-weight:lighter;
 	 		font-family:$font-stack;
 	 		border:none;  
 		}
 	}
-
 	.picture,.copy-seven {
 		display:inline-block;
 		overflow:auto;
@@ -308,8 +303,8 @@
 			width:176px;
 			height:38px;
 			border-radius:40px;
-	 		background-color:#FEB648;
-	 		color:#FFFFFF;
+	 		background-color:$button-color;
+	 		color:$all-white;
 	 		font-size:16px;
 	 		font-weight:lighter;
 	 		font-family:$font-stack;
@@ -330,7 +325,6 @@
 	font-family:$font-stack;
 	margin:0 auto; 
 	overflow:hidden; 
-
 	.copy-eleven {
 		margin:80px auto;
 		display:block;
@@ -339,7 +333,6 @@
 		color:#3C3C3C;
 		font-weight:bold;
 		} 
-
 	.picture-one, .picture-two, .picture-three, .picture-four {
     	float:left;
     	width:25%;
@@ -348,9 +341,7 @@
     		display:inline-block;
     		} 
 		}
-
 	} 
-
 .container-seven { 
 	background-image: url('../../images/Darkerbackground.png');
 	background-repeat: no-repeat;
@@ -359,17 +350,15 @@
 	height:321px;
   	margin-top:109px;
   	margin-bottom:70px;
-  		
   		.form{
   			width:510px;
   			display:block;
   			padding-top:70px;
   			margin:0 auto;  			
-  			
   			h5{
   				font-family:$font-stack;
   				font-size:31px;
-  				color:#FFFFFF;
+  				color:$all-white;
   				text-align:center;
   				margin-bottom:12px;
   				font-weight:300;
@@ -377,11 +366,10 @@
   			p {
   				font-family:$font-stack;
   				font-size:18px;
-  				color:#FFFFFF;
+  				color:$all-white;
   				font-weight:300;
   				margin-bottom:20px; 
   			}
-
   			.container {
   				width:500px;  
   				input[type=text] {
@@ -407,136 +395,63 @@
   					border:none;
   					font-family:$font-stack;
   					font-size:16px; 
-  					color:#FFFFFF;
+  					color:$all-white;
   				}
-
   			}
   		}
 	}
-
 .container-eight {
 	width:1123px;
 	font-family:$font-stack;
 	margin:0 auto;
-	
 	.copy-nine {
 		display:block;
 		text-align:center;
 		font-size:40px;	
 	}
-
 	.copy-ten {
 		display:inline-block;
-
 		.box-copy-four {
 			text-align:center;
 			display:inline-block;
-			margin-top:73px;
-			margin-bottom:74px;
-			
-			.tf-ion-quote:before {
-  			content:"\f347";
-  			font-family:"themefisher-font";
-  			font-size:40px;
-  			color:#FDA920;
-  			width:30px; 
-			}
-			.description {
-				width:322.36px; 
-				font-family:"Lora";
-				font-size:14px;
-				font-style:italic; 
-				color:#777777;
-				margin:25px auto;
-				font-weight:italic;
-				line-height:20px;
-			}
-			.name{
-				font-size:18px;
-			}
-			.ceo{
-				margin:0 auto;
-			}
-			.title {
-				font-size:14px;
-			}
-			.description, .name, .title {
-				text-align:center;
-			}
-
+			margin:73px 49px 74px 0;
+				.tf-ion-quote:before {
+	  			content:"\f347";
+	  			font-family:"themefisher-font";
+	  			font-size:40px;
+	  			color:#FDA920;
+	  			width:30px; 
+				}
+				.description {
+					width:322.36px; 
+					font-family:"Lora";
+					font-size:14px;
+					font-style:italic; 
+					color:#777777;
+					margin:25px auto;
+					font-weight:italic;
+					line-height:20px;
+				}
+				.name{
+					font-size:18px;
+				}
+				.ceo{
+					margin:0 auto;
+				}
+				.title {
+					font-size:14px;
+				}
+				.description, .name, .title {
+					text-align:center;
+				}
 		}
 		.box-copy-five {
-			display:inline-block;
-			text-align:center;
-			margin-left:70px;
-
-			.tf-ion-quote:before {
-  			content:"\f347";
-  			font-family:"themefisher-font";
-  			font-size:40px;
-  			color:#FDA920;
-  			width:30px;
-			}
-			.description {
-				width:322.36px; 
-				font-family:"Lora";
-				font-size:14px;
-				font-style:italic; 
-				color:#777777;
-				margin:25px auto;
-				font-weight:italic;
-				line-height:20px; 
-			}
-			.name{
-				font-size:18px;
-			}
-			.ceo{
-				margin:0 auto;
-			}
-			.title {
-				font-size:14px;
-			}
-			.description, .name, .title {
-				text-align:center;
-			}
+			@extend .box-copy-four;
 		}
-
-		.box-copy-six {
-			display:inline-block;
-			text-align:center;
-			margin-left:70px;
-			.tf-ion-quote:before {
-  			content:"\f347";
-  			font-family:"themefisher-font";
-  			font-size:40px;
-  			color:#FDA920;
-  			width:30px; 
-			}
-			.description {
-				width:322.36px; 
-				font-family:"Lora";
-				font-size:14px;
-				font-style:italic; 
-				color:#777777;
-				margin:25px auto;
-				font-weight:italic;
-				line-height:20px; 
-			}
-			.name{
-				font-size:18px;
-			}
-			.ceo{
-				margin:0 auto;
-			}
-			.title {
-				font-size:14px;
-			}
-			.description, .name, .title {
-				text-align:center;
-			}
+		.box-copy-six { 
+			@extend .box-copy-four; 
 		}
 	}
-
 	.button {
 		margin:0 auto;
 		text-align:center; 
@@ -544,8 +459,8 @@
 			width:176px;
 			height:38px;
 			border-radius:40px;
-	 		background-color:#FEB648;
-	 		color:#FFFFFF;
+	 		background-color:$button-color;
+	 		color:$all-white;
 	 		font-size:16px;
 	 		font-weight:lighter;
 	 		font-family:$font-stack;
@@ -553,7 +468,6 @@
 		}
 	}
 }
-
 	.container-nine {
 		width:100%; 
 		background-color:#F4F4F4; 
@@ -561,30 +475,28 @@
 		padding-top:50px;
 		padding-bottom:50px;
 		margin-top:76px; 
-		
 		.footer-copy {
 			font-family:$font-stack;
-				p {
-					margin:23px auto;
-					font-size:13px;
+				p 	{
+						margin:23px auto;
+						font-size:13px;
+					
 					}
-			ul {
-				list-style:none;
-			li {
-				display:inline-block;
-				margin-right:10px;
-				font-size:13px;
-				font-weight:700;
-			}
-			.copyright {
+				ul {
+					list-style:none;
+					li 	{
+						display:inline-block;
+						margin-right:10px;
+						font-size:13px;
+						font-weight:700;
+						}
+				}
+				.copyright {
 				font-size:11px; 
-			}
-		}
-
+				}
 		}
 		
-	}
-
+}
 
 
 
