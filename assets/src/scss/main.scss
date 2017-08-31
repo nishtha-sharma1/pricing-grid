@@ -200,51 +200,75 @@
 		overflow:auto;
 		box-sizing:border-box;
 	}
+	
 
 	.copy-three {
 		.box-copy-one {
-
-		.tf-ion-ios-camera-outline:before {
-  		content:"\f3f5";
-  		font-family:"themefisher-font";
-  		font-size:30px; 
-			}
+			.tf-strategy:before {
+	  		content:"\e03b";
+	  		font-family:"themefisher-font";
+	  		font-size:30px; 
+				}
 		}
-
 		.box-copy-two {
-			.tf-ion-ios-camera-outline:before {
-	  		content:"\f3f5";
+			.tf-ion-ios-briefcase-outline:before {
+	  		content:"\f3ed";
 	  		font-family:"themefisher-font";
 	  		font-size:30px; 
 			}
 		}
-
 		.box-copy-three {
-
 			.tf-ion-ios-camera-outline:before {
 	  		content:"\f3f5";
 	  		font-family:"themefisher-font";
 	  		font-size:30px; 
 			}
-
 		}
-
 	}
 	.picture {
 		width:$picture-width;
 		margin-top:62px;
 	}
+
+
+	/*
+	horse = strategy = e03b
+	tf-ion-ios-briefcase-outline
+	tf-ion-ios-cart-outline
+	*/
+	
 	.copy-four {	
+		.box-copy-one {
+			.tf-strategy:before {
+	  		content:"\e03b";
+	  		font-family:"themefisher-font";
+	  		font-size:30px; 
+				}
+		}
+
+	.box-copy-two {
 		.tf-mobile:before {
   		content:"\e000";
   		font-family:"themefisher-font";
   		font-size:30px;  
 		}
-		margin-left:30px;
+			
 	}
+	.box-copy-three {
+		.tf-ion-ios-cart-outline:before {
+  		content:"\f3f7";
+  		font-family:"themefisher-font";
+  		font-size:30px;  
+		}
+	}	
+
+		//margin-left:30px;
+	}
+
 	h4 {
 		font-size:20px;
 		font-weight:bold;
+		margin-top:10px;
 	}
 	p {
 		font-size:18px;
