@@ -77,11 +77,46 @@
  body {
  	font-family:$font-stack;
  }
+
+.container {
+	max-width: $width;
+	margin: 0 auto;
+	overflow: hidden; 
+}
+
+.container--large {
+	max-width: 1041px;
+}
+
+.container--xlarge {
+	max-width: 1149px;
+}
+
+.container--small {
+	max-width: 991px;
+}
+
+.full-width-bg {
+	background-color: #FDA920;
+}
+
+.watch {
+ 	width: 25%;
+ 	float:left;
+ 	overflow:auto;
+ 	position:relative;
+ 	text-align: center;
+
+	img {
+		display: inline-block;
+		max-width: 100%;
+		height: 275px;
+	}
+}
+
 .container-zero { 
-	width: $width;
 	font-family:$font-stack;
-	margin:0 auto;
-	overflow:auto; 
+
 		h1 {
 			font-size:$font-size-medium;
 			font-weight: 300;
@@ -100,16 +135,7 @@
 		}
 	}
 .container-one {
-	width:$width;
-	margin:0 auto;
-	overflow:auto;
-	 .picture {
-	 	width:$picture-width;
-	 	float:left;
-	 	overflow:auto;
-	 	position:relative;
-	 	margin-top:151px;
-	 }
+
 	 .copy-one {
 	 	width:560px;
 	 	font:$font-stack;
@@ -145,11 +171,16 @@
 	 		box-shadow:0 0 15px $button-color;
 	 		} 
 		}
+
+	.picture {
+		width:$picture-width;
+		margin-top:62px;
+		float: left;
+	}
 }
 .container-two {
-	width:1041px;
-	margin:0 auto;
 	font-family:$font-stack;  
+
 	.copy-two{
 		width:100%;
 		text-align:center;
@@ -163,25 +194,49 @@
 		margin-left:20px;
 		position:relative;
 	}
+
 	.copy-three, .copy-four {
 		width:320px;
 		overflow:auto;
 		box-sizing:border-box;
 	}
+
 	.copy-three {
+		.box-copy-one {
+
 		.tf-ion-ios-camera-outline:before {
   		content:"\f3f5";
   		font-family:"themefisher-font";
   		font-size:30px; 
+			}
 		}
+
+		.box-copy-two {
+			.tf-ion-ios-camera-outline:before {
+	  		content:"\f3f5";
+	  		font-family:"themefisher-font";
+	  		font-size:30px; 
+			}
+		}
+
+		.box-copy-three {
+
+			.tf-ion-ios-camera-outline:before {
+	  		content:"\f3f5";
+	  		font-family:"themefisher-font";
+	  		font-size:30px; 
+			}
+
+		}
+
 	}
 	.picture {
 		width:$picture-width;
 		margin-top:62px;
 	}
 	.copy-four {	
-		.tf-ion-ios-camera-outline:before {
-  		content:"\f3f5";
+		.tf-mobile:before {
+  		content:"\e000";
   		font-family:"themefisher-font";
   		font-size:30px;  
 		}
@@ -199,7 +254,6 @@
 }
 .container-three {
 	width:100%;
-	background-color:#FDA920;
 	margin-top:92px;
 	font-family:$font-stack;
 	color:$all-white;
@@ -232,9 +286,8 @@
 }
 
 .container-four {
-	width:991px;
 	font-family:$font-stack;
-	margin:0 auto;
+
 	.copy-six{
 		display:block;
 		font-size:40px;
@@ -279,9 +332,8 @@
 	}
 }
 .container-five {
-	width:991px;
 	font-family:$font-stack;
-	margin:0 auto;
+
 	.copy-eight {
 		width:496px;
 		margin:60px auto;
@@ -316,11 +368,10 @@
 		overflow:auto;
 	}
 }
-.container-six {
-	width:1149px;
+.watches {
 	font-family:$font-stack;
-	margin:0 auto; 
-	overflow:hidden; 
+	overflow: hidden;
+
 	.copy-eleven {
 		margin:80px auto;
 		display:block;
@@ -328,17 +379,9 @@
 		font-size:40px;
 		color:#3C3C3C;
 		font-weight:bold;
-		} 
-	.picture-one, .picture-two, .picture-three, .picture-four {
-    	float:left;
-    	width:25%;
-    	img {
-    		width:100%;
-    		display:inline-block;
-    		} 
-		}
 	} 
-.container-seven { 
+} 
+.subscribe-section { 
 	background-image: url('../../images/Darkerbackground.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -396,10 +439,9 @@
   			}
   		}
 	}
-.container-eight {
-	width:1123px;
+.reviews {
 	font-family:$font-stack;
-	margin:0 auto;
+
 	.copy-nine {
 		display:block;
 		text-align:center;
@@ -466,7 +508,7 @@
 		}
 	}
 }
-	.container-nine {
+	.mastfoot {
 		width:100%; 
 		background-color:#F4F4F4; 
 		text-align:center;
